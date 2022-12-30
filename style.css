@@ -68,3 +68,19 @@ a {
   font-size: 20px;
   font-family: "Courgette", cursive;
 }
+.github-link {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 8px;
+  font-family: "Unbounded", cursive;
+}
+.link {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 8px;
+  color: #155263;
+  font-family: "Unbounded", cursive;
+}
+.link:hover {
+  text-decoration: underline;
+}
