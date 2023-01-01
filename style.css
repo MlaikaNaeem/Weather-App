@@ -9,15 +9,17 @@ h1 {
 h2 {
   font-size: 50px;
 }
-.container {
+.weather-app {
   border: 2px solid black;
-  max-width: 700px;
+  max-width: 600px;
+  margin: auto;
   padding: 20px 15px;
-  border-radius: 10px;
+  border-radius: 16px;
   margin-top: 40px;
   background: url("background.jpg");
   background-size: cover;
   font-family: "Fira Sans Condensed", sans-serif;
+  box-shadow: 0 30px 40px rgba(17, 167, 212, 0.08);
 }
 .box {
   width: 350px;
@@ -49,20 +51,25 @@ a {
 .card-body {
   background: url("background.jpg");
   background-size: cover;
+  border-radius: 20px;
+  border: 1px black;
 }
 .card {
   text-align: center;
+  background-color: #155263;
   font-family: "Courgette", cursive;
-  margin: auto;
+  border-radius: 20px;
 }
 .list-group-item {
   background: url("background.jpg");
   background-size: cover;
   color: white;
   list-style: none;
+  border: none;
 }
-.weather {
-  margin-top: 15px;
+.weather-forcast {
+  margin-top: 20px;
+  margin: 30px auto;
   border: none;
   border-radius: 10px;
   font-size: 20px;
