@@ -41,6 +41,12 @@ function displayWeather(response) {
   document.querySelector("#time").innerHTML = formatDate(
     response.data.time * 1000
   );
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+    );
 }
 
 function search(city) {
