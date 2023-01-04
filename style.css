@@ -16,8 +16,11 @@ h2 {
   padding: 20px 15px;
   border-radius: 16px;
   margin-top: 40px;
-  background: url("background.jpg");
-  background-size: cover;
+  background: linear-gradient(
+    109.6deg,
+    rgb(0, 37, 84) 11.2%,
+    rgba(0, 37, 84, 0.32) 100.2%
+  );
   font-family: "Fira Sans Condensed", sans-serif;
 }
 .weather-icon {
@@ -30,7 +33,7 @@ h2 {
 .box {
   width: 350px;
   height: 50px;
-  background-color: #155263;
+  background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
   display: flex;
   align-items: center;
   border-radius: 30px;
@@ -47,7 +50,7 @@ h2 {
   outline: none;
   font-size: 18px;
   padding-left: 10px;
-  background-color: #155263;
+  background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
 }
 a {
   color: white;
@@ -55,8 +58,11 @@ a {
   font-size: 50px;
 }
 .card-body {
-  background: url("background.jpg");
-  background-size: cover;
+  background: linear-gradient(
+    109.6deg,
+    rgb(0, 37, 84) 11.2%,
+    rgba(0, 37, 84, 0.32) 100.2%
+  );
   border-radius: 20px;
   border: 1px black;
 }
@@ -67,8 +73,11 @@ a {
   border-radius: 20px;
 }
 .list-group-item {
-  background: url("background.jpg");
-  background-size: cover;
+  background: linear-gradient(
+    109.6deg,
+    rgb(0, 37, 84) 11.2%,
+    rgba(0, 37, 84, 0.32) 100.2%
+  );
   color: white;
   list-style: none;
   border: none;
