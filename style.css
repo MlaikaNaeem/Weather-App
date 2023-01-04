@@ -31,7 +31,7 @@ h2 {
   margin-top: -40px;
 }
 .box {
-  width: 350px;
+  width: 300px;
   height: 50px;
   background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
   display: flex;
