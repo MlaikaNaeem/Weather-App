@@ -91,3 +91,6 @@ a {
 .link:hover {
   text-decoration: underline;
 }
+#description {
+  text-transform: capitalize;
+}
