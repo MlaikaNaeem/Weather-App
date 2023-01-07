@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Fira+Sans+Condensed&family=Unbounded&display=swap");
 body {
   color: white;
-  background-color: black;
+  background-color: #f9f7fe;
 }
 h1 {
   font-family: "Unbounded", cursive;
@@ -110,16 +110,18 @@ h1 {
   text-align: center;
   margin-top: 8px;
   font-family: "Unbounded", cursive;
+  color: #000000;
 }
 .link {
   font-size: 12px;
   text-align: center;
   margin-top: 8px;
-  color: #155263;
+  color: #4a4676;
   font-family: "Unbounded", cursive;
 }
 .link:hover {
   text-decoration: underline;
+  color: #042d57;
 }
 #description {
   text-transform: capitalize;
