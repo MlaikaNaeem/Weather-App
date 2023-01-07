@@ -6,7 +6,7 @@ body {
 h1 {
   font-family: "Unbounded", cursive;
 }
-h2 {
+.main-temp {
   font-size: 50px;
 }
 .weather-app {
@@ -23,13 +23,7 @@ h2 {
   );
   font-family: "Fira Sans Condensed", sans-serif;
 }
-.weather-icon {
-  width: 140px;
-  height: 140px;
-  margin-left: -15px;
-  margin-bottom: -20px;
-  margin-top: -40px;
-}
+
 .box {
   width: 300px;
   height: 50px;
@@ -52,10 +46,30 @@ h2 {
   padding-left: 10px;
   background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
 }
-a {
-  color: white;
+.units {
+  font-size: 22px;
+  position: relative;
+  top: -24px;
   text-decoration: none;
-  font-size: 50px;
+}
+.units a {
+  text-decoration: none;
+}
+.units .active {
+  text-decoration: none;
+  color: white;
+  cursor: default;
+}
+
+.units .fahrenheit {
+  text-decoration: none;
+}
+.weather-icon {
+  width: 120px;
+  height: 130px;
+  margin-left: -15px;
+  margin-bottom: -20px;
+  margin-top: -35px;
 }
 .card-body {
   background: linear-gradient(
