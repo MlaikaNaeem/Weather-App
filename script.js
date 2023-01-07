@@ -89,3 +89,25 @@ function showCelsiusTemp(event) {
 }
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemp);
+
+function displayForecast() {
+  let forecast = document.querySelector("#forecast");
+  let days = ["Sun", "Mon", "Tues", "Wed", "Thu"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (days) {
+    forecastHTML =
+      forecastHTML +
+      `         
+            <div class="col-2">
+             <div> ${days} </div>
+             <i class="fa-solid fa-sun"></i>
+             <div class="forecast-temp">
+              <span class="temp-max">23°</span>
+              <span class="temp-min"> 10°</span>
+              </div>
+            </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecast.innerHTML = forecastHTML;
+}
+displayForecast();
