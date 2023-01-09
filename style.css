@@ -11,7 +11,7 @@ h1 {
 }
 .weather-app {
   border: 2px solid black;
-  max-width: 600px;
+  max-width: 665px;
   margin: auto;
   padding: 20px 15px;
   border-radius: 16px;
@@ -99,9 +99,7 @@ h1 {
 }
 .weather-forecast {
   margin-top: 20px;
-  margin: 35px 40px;
   border: none;
-  border-radius: 10px;
   font-size: 20px;
   font-family: "Courgette", cursive;
 }
