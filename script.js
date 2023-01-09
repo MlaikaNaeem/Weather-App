@@ -22,12 +22,48 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function formatTime(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tues", "Wed", "Thu", "Fri", "Sat"];
+  return days[day];
+}
+function displayForecast(response) {
+  let dailyForecast = response.data.daily;
+  let forecast = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  dailyForecast.forEach(function (forecastDay, index) {
+    if (index < 5) {
+      forecastHTML =
+        forecastHTML +
+        `         
+            <div class="col-2 ">
+             <div> ${formatTime(forecastDay.time)} </div>
+             <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
+               forecastDay.condition.icon
+             }.png"
+             </br>
+            <div class="forecast-temp">
+              <span class="temp-max">${Math.round(
+                forecastDay.temperature.maximum
+              )}° </span>
+              <span class="temp-min"> ${Math.round(
+                forecastDay.temperature.minimum
+              )}° </span>
+              </div>
+            </div>`;
+    }
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecast.innerHTML = forecastHTML;
+}
 function getForecast(coordinates) {
   console.log(coordinates);
   let apiKey = "8e4abct0a56ee8b9ed8700oa801393f4";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
+
 function displayWeather(response) {
   console.log(response);
   celsiusTemperature = response.data.temperature.current;
@@ -64,8 +100,8 @@ function search(city) {
 }
 function handleSubmit(event) {
   event.preventDefault();
-  let city = document.querySelector("#search-city").value;
-  search(city);
+  let city = document.querySelector("#search-city");
+  search(city.value);
 }
 
 let box = document.querySelector("#input-box");
@@ -96,25 +132,3 @@ function showCelsiusTemp(event) {
 }
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemp);
-
-function displayForecast(response) {
-  console.log(response.data.daily);
-  let forecast = document.querySelector("#forecast");
-  let days = ["Sun", "Mon", "Tues", "Wed", "Thu"];
-  let forecastHTML = `<div class="row">`;
-  days.forEach(function (days) {
-    forecastHTML =
-      forecastHTML +
-      `         
-            <div class="col-2">
-             <div> ${days} </div>
-             <i class="fa-solid fa-sun"></i>
-             <div class="forecast-temp">
-              <span class="temp-max">23°</span>
-              <span class="temp-min"> 10°</span>
-              </div>
-            </div>`;
-  });
-  forecastHTML = forecastHTML + `</div>`;
-  forecast.innerHTML = forecastHTML;
-}
