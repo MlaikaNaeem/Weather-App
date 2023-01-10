@@ -60,9 +60,10 @@ h1 {
   color: white;
   cursor: default;
 }
-
 .units .fahrenheit {
   text-decoration: none;
+  color: #98a5bb;
+  font-size: 22px;
 }
 .weather-icon {
   width: 120px;
@@ -96,6 +97,16 @@ h1 {
   list-style: none;
   border: none;
   padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.list {
+  color: #a2a8d3;
+  font-weight: 500;
+}
+.convert {
+  color: #a2a8d3;
 }
 .weather-forecast {
   margin-top: 20px;
