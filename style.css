@@ -11,7 +11,7 @@ h1 {
 }
 .weather-app {
   border: 2px solid black;
-  max-width: 665px;
+  max-width: 600px;
   margin: auto;
   padding: 20px 15px;
   border-radius: 16px;
@@ -108,14 +108,28 @@ h1 {
 .convert {
   color: #a2a8d3;
 }
-.weather-forecast {
+.daily-forecast {
+  display: flex;
+  justify-content: space-around;
   margin-top: 20px;
-  border: none;
+}
+.col-2 {
   font-size: 20px;
   font-family: "Courgette", cursive;
+  margin: 5px;
+  text-align: center;
+  flex: 1;
+}
+.daily-icon {
+  display: block;
+  margin: 20px auto;
+  width: 60px;
+  height: 60px;
 }
 .temp-min {
   opacity: 0.6;
+  font-size: 20px;
+  margin: 5px;
 }
 .github-link {
   font-size: 12px;

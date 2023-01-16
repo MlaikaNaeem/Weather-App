@@ -37,11 +37,11 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `         
-            <div class="col-2 w-auto">
+            <div class="col-2">
              <div> ${formatTime(forecastDay.time)} </div>
-             <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
+             <img class="daily-icon" src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
                forecastDay.condition.icon
-             }.png"
+             }.png" 
              </br>
             <div class="forecast-temp">
               <span class="temp-max">${Math.round(
