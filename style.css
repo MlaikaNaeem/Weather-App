@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Fira+Sans+Condensed&family=Unbounded&display=swap");
 body {
   color: white;
-  background-color: #f9f7fe;
+  background: linear-gradient(
+    109.6deg,
+    rgb(0, 37, 84) 11.2%,
+    rgba(0, 37, 84, 0.32) 100.2%
+  );
 }
 h1 {
   font-family: "Unbounded", cursive;
@@ -15,7 +19,7 @@ h1 {
   margin: auto;
   padding: 20px 15px;
   border-radius: 16px;
-  margin-top: 40px;
+  margin-top: 30px;
   background: linear-gradient(
     109.6deg,
     rgb(0, 37, 84) 11.2%,
@@ -133,6 +137,7 @@ h1 {
 }
 .github-link {
   font-size: 12px;
+  font-weight: bold;
   text-align: center;
   margin-top: 8px;
   margin-bottom: 12px;
@@ -141,15 +146,21 @@ h1 {
 }
 .link {
   font-size: 12px;
+  font-weight: 200;
   text-align: center;
   margin-top: 8px;
-  color: #4a4676;
+  color: #042d57;
   font-family: "Unbounded", cursive;
 }
 .link:hover {
   text-decoration: underline;
-  color: #042d57;
+  color: #dde0ab;
 }
 #description {
   text-transform: capitalize;
+}
+@media (max-width: 576px) {
+  .link {
+    margin-bottom: 3px;
+  }
 }
