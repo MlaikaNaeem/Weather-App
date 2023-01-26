@@ -163,4 +163,7 @@ h1 {
   .link {
     margin-bottom: 3px;
   }
+  .app-body {
+    margin-bottom: 1px;
+  }
 }
