@@ -19,7 +19,7 @@ h1 {
   margin: auto;
   padding: 20px 15px;
   border-radius: 16px;
-  margin-top: 30px;
+  margin-top: 20px;
   background: linear-gradient(
     109.6deg,
     rgb(0, 37, 84) 11.2%,
@@ -162,8 +162,5 @@ h1 {
 @media (max-width: 576px) {
   .link {
     margin-bottom: 3px;
-  }
-  .app-body {
-    margin-bottom: 1px;
   }
 }
